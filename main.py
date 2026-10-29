@@ -70,7 +70,7 @@ def main():
 
     print("\n0. Exit")
 
-    choice = raw_input("\nChoose a skill number: ")
+    choice = input("\nChoose a skill number: ")
 
     try:
         index = int(choice)
@@ -84,7 +84,7 @@ def main():
             return
 
         name, module = skills[index - 1]
-        message = raw_input("Enter your message: ")
+        message = input("Enter your message: ")
 
         print("\nUGRA:", module.run(message))
 
